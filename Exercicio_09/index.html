@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Exercício 09 - PHP</title>
+        <style>
+
+            * {box-sizing: border-box;}
+            p {margin: 0;}
+            input {display: block;}
+            input:last-child{margin-top:10px;}
+
+        </style>
+    </head>
+
+    <body>
+
+        <form method="POST"
+            action="processamento.php">
+            
+            <p>Marca:</p>
+            <input 
+                type="text" 
+                name="typed_brand" 
+                size="20"
+                placeholder="Digite a marca" 
+                required>
+            <p>Cor:</p> 
+            <input 
+                type="text" 
+                name="typed_color" 
+                size="20"
+                placeholder="Digite a cor" 
+                required>
+            <p>Modelo:</p>
+            <input 
+                type="text" 
+                name="typed_model" 
+                size="20"
+                placeholder="Digite o modelo" 
+                required>
+            <p>Preço:</p>
+            <input 
+                type="text" 
+                name="typed_price" 
+                size="20"
+                placeholder="Digite o preço" 
+                required>
+            <input 
+                type="submit" 
+                value="Enviar Dados" name="btn_envio">
+        </form>
+
+    </body>
+</html>
